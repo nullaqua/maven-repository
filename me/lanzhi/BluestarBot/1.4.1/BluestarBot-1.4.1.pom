@@ -12,7 +12,7 @@
     <name>BluestarBot</name>
 
     <properties>
-        <java.version>9</java.version>
+        <java.version>10</java.version>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
@@ -162,7 +162,7 @@
         <dependency>
             <groupId>me.lanzhi</groupId>
             <artifactId>BluestarAPI-Bukkit-injector</artifactId>
-            <version>3.3.1</version>
+            <version>3.3.2</version>
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
