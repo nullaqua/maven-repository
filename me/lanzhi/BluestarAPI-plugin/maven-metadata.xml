@@ -3,10 +3,10 @@
   <groupId>me.lanzhi</groupId>
   <artifactId>BluestarAPI-plugin</artifactId>
   <versioning>
-    <release>3.3.7</release>
+    <release>3.4.0</release>
     <versions>
-      <version>3.3.7</version>
+      <version>3.4.0</version>
     </versions>
-    <lastUpdated>20230310095219</lastUpdated>
+    <lastUpdated>20230409063002</lastUpdated>
   </versioning>
 </metadata>
