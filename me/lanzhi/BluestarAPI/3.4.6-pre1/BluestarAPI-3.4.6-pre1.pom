@@ -11,6 +11,7 @@
         <module>BluestarAPI-Bukkit-injector</module>
         <module>BluestarAPI-plugin</module>
         <module>BluestarAPI-injector</module>
+        <module>BluestarAPI-netty</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -20,6 +21,7 @@
         <java.version>10</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
+        <kotlin.version>1.8.21</kotlin.version>
     </properties>
 
     <repositories>
@@ -58,6 +60,29 @@
                         <goals>
                             <goal>jar</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>run</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>cmd</executable>
+                            <arguments>
+                                <argument>/c</argument>
+                                <argument>C:\.mvn-repo\updata.bat</argument>
+                                <argument>${project.name}</argument>
+                                <argument>${project.version}</argument>
+                            </arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
